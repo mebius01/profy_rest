@@ -1,1 +1,1 @@
-web: gunicorn profy_rest.wsgi
+web: gunicorn profy_rest.wsgi --log-file -
