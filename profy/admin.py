@@ -4,11 +4,13 @@ from .models import Calls, Categories
 
 
 class CallsAdmin(admin.ModelAdmin):
-    list_display = ('name', 'id', 'telephone', 'comment', 'created')
+    list_display = ['name', 'id', 'telephone', 'answer', 'comment', 'created',]
+    search_fields = ['name', 'telephone',]
+    list_editable =['answer',]
 
 
 class CategoriesAdmin(admin.ModelAdmin):
-    list_display = ('title', 'id', 'description', 'created')
+    list_display = ['title', 'id', 'description', 'created',]
     prepopulated_fields = {'slug': ('title', )}
 
 

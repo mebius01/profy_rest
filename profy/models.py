@@ -7,6 +7,7 @@ class Calls(models.Model):
     name = models.CharField(max_length=250)
     telephone = models.CharField(max_length=250)
     comment = models.TextField(max_length=800)
+    answer = models.BooleanField(default=False)
     created = models.DateTimeField(auto_now_add=True)
 
     class Meta:
