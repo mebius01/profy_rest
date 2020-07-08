@@ -21,12 +21,23 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '=_ev4nh7um_5d(dy9+g@0vik6)ebovp(e$#k@758i$#a51+3t1'
+DEBUG = config('DEBUG', default=True, cast=bool)
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
+SECRET_KEY = config('SECRET_KEY')
+SECURE_HSTS_SECONDS = config('SECURE_HSTS_SECONDS', default=False, cast=int)
+SECURE_HSTS_PRELOAD = config('SECURE_HSTS_PRELOAD', default=False, cast=bool)
+SECURE_HSTS_INCLUDE_SUBDOMAINS = config(
+    'SECURE_HSTS_INCLUDE_SUBDOMAINS', default=False, cast=bool)
+SECURE_CONTENT_TYPE_NOSNIFF = config(
+    'SECURE_CONTENT_TYPE_NOSNIFF', default=False, cast=bool)
+SECURE_BROWSER_XSS_FILTER = config(
+    'SECURE_BROWSER_XSS_FILTER', default=False, cast=bool)
+SECURE_SSL_REDIRECT = config('SECURE_SSL_REDIRECT', default=False, cast=bool)
+SESSION_COOKIE_SECURE = config(
+    'SESSION_COOKIE_SECURE', default=False, cast=bool)
+CSRF_COOKIE_SECURE = config('CSRF_COOKIE_SECURE', default=False, cast=bool)
+X_FRAME_OPTIONS = os.environ.get('X_FRAME_OPTIONS', default='SAMEORIGIN')
 
 
 # Application definition
@@ -126,7 +137,13 @@ STATIC_URL = '/static/'
 
 CORS_ORIGIN_ALLOW_ALL = False
 
-CORS_ORIGIN_WHITELIST = (
-    'http://localhost:8000', 'http://localhost:9000'
-)
+# EMAIL
+DEFAULT_FROM_EMAIL = config('DEFAULT_FROM_EMAIL')
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = config("EMAIL_HOST")
+EMAIL_PORT = config("EMAIL_PORT")
+EMAIL_HOST_PASSWORD = config("EMAIL_HOST_PASSWORD")
+EMAIL_HOST_USER = config("EMAIL_HOST_USER")
+EMAIL_USE_TLS = config("EMAIL_USE_TLS", default=True)
+
 django_heroku.settings(locals())
