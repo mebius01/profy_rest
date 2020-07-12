@@ -6,7 +6,7 @@ class CategoriesSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Categories
-        fields = ['id', 'title', 'description', 'description_long']
+        fields = ['id', 'title', 'description', 'description_long', 'img']
 
 
 class CallsSerializer(serializers.ModelSerializer):
