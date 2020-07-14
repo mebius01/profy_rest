@@ -132,7 +132,7 @@ DATE_INPUT_FORMATS = ['%d.%m.%Y']
 STATIC_ROOT = config('STATIC_ROOT')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'staticfile'),
 )
 MEDIA_ROOT = config('MEDIA_ROOT')
 MEDIA_URL = '/media/'
@@ -192,3 +192,8 @@ REST_FRAMEWORK = {
 CORS_ORIGIN_ALLOW_ALL = False
 CORS_ORIGIN_WHITELIST = config('CORS_ORIGIN_WHITELIST', cast=Csv())
 CORS_ALLOW_METHODS = config('CORS_ALLOW_METHODS', cast=Csv())
+
+# Fixtures
+FIXTURE_DIRS = [
+    os.path.join(BASE_DIR, "fixtures"),
+]
