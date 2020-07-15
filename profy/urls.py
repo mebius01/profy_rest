@@ -18,13 +18,16 @@ from django.conf.urls.static import static
 from django.contrib.auth import views
 from django.contrib import admin
 from django.urls import include, path
+from django.views.generic import TemplateView, DetailView
 from profy.views import *
 
 # from django.views.generic import ListView, DetailView
 
 app_name = 'profy'
 
+
 urlpatterns = [
+    path('', TemplateView.as_view(template_name = 'profy/index.html'), name='index'),
     path('api/v1/', CategoriesList.as_view(), name='api_categories'),
     path('api/v1/<int:pk>/', CategoriesDetail.as_view(), name='id_categories'),
     path('api/v1/post/', CallsCreate.as_view(), name='calss_create'),
