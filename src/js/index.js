@@ -15,6 +15,27 @@ import {
   sendCallForm
 } from './views/form'
 import showHideModal from './views/click'
+import localData from './config/LocalData'
+
+
+const hellopreloader = document.getElementById("hellopreloader_preload");
+
+function fadeOutnojquery(el) {
+  el.style.opacity = 1;
+  const interhellopreloader = setInterval(function () {
+    el.style.opacity = el.style.opacity - 0.05;
+    if (el.style.opacity <= 0.05) {
+      clearInterval(interhellopreloader);
+      hellopreloader.style.display = "none";
+    }
+  }, 16);
+}
+window.onload = function () {
+  setTimeout(function () {
+    fadeOutnojquery(hellopreloader);
+  }, 1000);
+};
+
 
 const formFooter = document.forms.form_footer;
 const formSicial = document.forms.form_social;
@@ -29,6 +50,7 @@ api.getCategories().then((response) => {
 
 // CLICK ON SOCIAL
 social.addEventListener('click', getEventOnIcon)
+
 function getEventOnIcon(event) {
   const parent = event.target.parentNode;
   if (parent.getAttribute('id') == "menu") {
@@ -44,8 +66,25 @@ function getEventOnIcon(event) {
   }
 }
 
-// Render for footer
-const footer = document.querySelector('footer')
+// Render for localData
+const telephone = document.getElementById('footer-telephone')
+const email = document.getElementById('footer-email')
+const address = document.getElementById('footer-address')
+const schedule = document.getElementById('footer-schedule')
+const instagram = document.getElementById('instagram')
+const facebook = document.getElementById('facebook')
+const map = document.getElementById('social-map')
+
+telephone.textContent = localData.telephone
+telephone.setAttribute('href', `tel:${localData.telephone}`)
+email.setAttribute('href', `mailto:${localData.email}`)
+email.textContent = localData.email
+address.textContent = localData.address
+schedule.textContent = localData.schedule
+instagram.setAttribute('href', localData.instagram)
+facebook.setAttribute('href', localData.facebook)
+map.setAttribute('src', localData.map)
+
 
 // SEND CALL FORM
 formSicial.addEventListener("submit", getValueOnCall)

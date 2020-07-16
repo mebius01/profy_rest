@@ -35,23 +35,25 @@
       <ul class="contact">
         <li class="contact__item">
           <i class="fas fa-mobile-alt"></i>
-          <a href="tel:+380963128203" class="contact__link">+38(096)-312-82-03
+          <a href="tel:+380963128203" id="footer-telephone"
+            class="contact__link">
           </a>
         </li>
         <li class="contact__item">
           <i class="far fa-envelope"></i>
-          <a href="mailto:profy.shop.top@gmail.com" class="contact__link">
-            profy.shop.top@gmail.com
+          <a id="footer-email" href="mailto:profy.shop.top@gmail.com"
+            class="contact__link">profy.shop.top@gmail.com
           </a>
         </li>
         <li class="contact__item">
           <i class="fas fa-map-marked-alt"></i>
           <!-- <a href="" class="contact__link"></a> -->
-          ул. Космонавтов 124 Б, офис 2
+          <span id="footer-address" class="contact__text">ул. Космонавтов 124 Б,
+            офис 2</span>
         </li>
         <li class="contact__item">
           <i class="far fa-clock"></i>
-          <span class="contact__text">10.00 - 17.00</span>
+          <span id="footer-schedule" class="contact__text">10.00 - 17.00</span>
         </li>
       </ul>
       <form class="form" name="form_footer">
@@ -121,8 +123,8 @@
   </ul>
   <div class="map">
     <i class="fas fa-times" id="fa-times-map"></i>
-    <iframe src="" frameborder="0" style="border: 0;" allowfullscreen=""
-      aria-hidden="false" tabindex="0">
+    <iframe id="social-map" frameborder="0" style="border: 0;"
+      allowfullscreen="" aria-hidden="false" tabindex="0">
     </iframe>
   </div>
   <div class="call">
@@ -150,25 +152,6 @@
     <div id="hellopreloader_preload"></div>
     <p></p>
   </div>
-  <script type="text/javascript">
-    var hellopreloader = document.getElementById("hellopreloader_preload");
-
-    function fadeOutnojquery(el) {
-      el.style.opacity = 1;
-      var interhellopreloader = setInterval(function () {
-        el.style.opacity = el.style.opacity - 0.05;
-        if (el.style.opacity <= 0.05) {
-          clearInterval(interhellopreloader);
-          hellopreloader.style.display = "none";
-        }
-      }, 16);
-    }
-    window.onload = function () {
-      setTimeout(function () {
-        fadeOutnojquery(hellopreloader);
-      }, 1000);
-    };
-  </script>
 </body>
 {% block javascript %}
 <script src="{% static 'js/app.js' %}"></script>

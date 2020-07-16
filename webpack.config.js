@@ -17,9 +17,20 @@ module.exports = {
     filename: 'js/app.js'
   },
 
+  devServer: {
+    publicPath: '',
+    port: 9000,
+    contentBase: path.join(process.cwd(), 'staticfile'),
+    host: 'localhost',
+    historyApiFallback: true,
+    noInfo: false,
+    stats: 'minimal',
+    hot: true,
+  },
+
   module: {
     rules: [
-       // css || sass
+      // css || sass
       {
         test: /\.s[ac]ss$/i,
         use: [

@@ -1,9 +1,9 @@
 import axios from 'axios'
 import url from '../config/config'
 
-// api/v1/ - categories
-// api/v1/{pk=1} - category id
-// api/v1/post/ - post re
+// api/categories/
+// api/{pk=1} - {pk=1} category id
+// api/post/
 
 const headers = {
   "Content-type": "application/json; charset=UTF-8"
