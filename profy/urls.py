@@ -28,8 +28,8 @@ app_name = 'profy'
 
 urlpatterns = [
     path('', TemplateView.as_view(template_name = 'profy/index.html'), name='index'),
-    path('api/v1/', CategoriesList.as_view(), name='api_categories'),
-    path('api/v1/<int:pk>/', CategoriesDetail.as_view(), name='id_categories'),
-    path('api/v1/post/', CallsCreate.as_view(), name='calss_create'),
+    path('api/categories/', CategoriesList.as_view(), name='api_categories'),
+    path('api/<int:pk>/', CategoriesDetail.as_view(), name='id_categories'),
+    path('api/post/', CallsCreate.as_view(), name='calss_create'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) \
     + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
