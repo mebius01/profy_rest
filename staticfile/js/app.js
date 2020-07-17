@@ -465,6 +465,78 @@ eval("var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPAC
 
 /***/ }),
 
+/***/ "./src/img/1.jpeg":
+/*!************************!*\
+  !*** ./src/img/1.jpeg ***!
+  \************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"img/1.jpeg\");\n\n//# sourceURL=webpack:///./src/img/1.jpeg?");
+
+/***/ }),
+
+/***/ "./src/img/2.jpeg":
+/*!************************!*\
+  !*** ./src/img/2.jpeg ***!
+  \************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"img/2.jpeg\");\n\n//# sourceURL=webpack:///./src/img/2.jpeg?");
+
+/***/ }),
+
+/***/ "./src/img/3.jpeg":
+/*!************************!*\
+  !*** ./src/img/3.jpeg ***!
+  \************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"img/3.jpeg\");\n\n//# sourceURL=webpack:///./src/img/3.jpeg?");
+
+/***/ }),
+
+/***/ "./src/img/4.jpeg":
+/*!************************!*\
+  !*** ./src/img/4.jpeg ***!
+  \************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"img/4.jpeg\");\n\n//# sourceURL=webpack:///./src/img/4.jpeg?");
+
+/***/ }),
+
+/***/ "./src/img/5.jpeg":
+/*!************************!*\
+  !*** ./src/img/5.jpeg ***!
+  \************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"img/5.jpeg\");\n\n//# sourceURL=webpack:///./src/img/5.jpeg?");
+
+/***/ }),
+
+/***/ "./src/img/6.jpeg":
+/*!************************!*\
+  !*** ./src/img/6.jpeg ***!
+  \************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"img/6.jpeg\");\n\n//# sourceURL=webpack:///./src/img/6.jpeg?");
+
+/***/ }),
+
 /***/ "./src/img/facebook.svg":
 /*!******************************!*\
   !*** ./src/img/facebook.svg ***!
@@ -581,7 +653,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// const url = 'http://127.0.
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../style/index.scss */ \"./src/style/index.scss\");\n/* harmony import */ var _style_index_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_index_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _img_open_menu_1_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../img/open-menu-1.png */ \"./src/img/open-menu-1.png\");\n/* harmony import */ var _img_favicon_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../img/favicon.png */ \"./src/img/favicon.png\");\n/* harmony import */ var _img_facebook_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../img/facebook.svg */ \"./src/img/facebook.svg\");\n/* harmony import */ var _img_instagram_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../img/instagram.svg */ \"./src/img/instagram.svg\");\n/* harmony import */ var _img_google_maps_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../img/google-maps.svg */ \"./src/img/google-maps.svg\");\n/* harmony import */ var _img_telephone_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../img/telephone.svg */ \"./src/img/telephone.svg\");\n/* harmony import */ var _img_tail_spin_svg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../img/tail-spin.svg */ \"./src/img/tail-spin.svg\");\n/* harmony import */ var _plugins_wow__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./plugins/wow */ \"./src/js/plugins/wow.js\");\n/* harmony import */ var _services_Api__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./services/Api */ \"./src/js/services/Api.js\");\n/* harmony import */ var _views_categories__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./views/categories */ \"./src/js/views/categories.js\");\n/* harmony import */ var _views_click__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./views/click */ \"./src/js/views/click.js\");\n/* harmony import */ var _config_LocalData__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./config/LocalData */ \"./src/js/config/LocalData.js\");\n/* harmony import */ var _views_form__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./views/form */ \"./src/js/views/form.js\");\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nconst formFooter = document.forms.form_footer;\nconst formSicial = document.forms.form_social;\nconst mian = document.querySelector('.main')\nconst social = document.querySelector('.social')\n\nconst hellopreloader = document.getElementById(\"hellopreloader_preload\");\n\nwindow.onload = function () {\n\n  // Render for Categories\n  _services_Api__WEBPACK_IMPORTED_MODULE_9__[\"default\"].getCategories().then((response) => {\n    Object(_views_categories__WEBPACK_IMPORTED_MODULE_10__[\"default\"])(response.data, mian)\n    if (response.status === 200) {\n      console.log(`Get categories status = ${response.status}`);\n      hellopreloader.style.display = \"none\";\n    }\n  })\n}\n\ndocument.addEventListener(\"DOMContentLoaded\", () => {\n  // CLICK ON SOCIAL\n  social.addEventListener('click', getEventOnIcon)\n\n  function getEventOnIcon(event) {\n    const parent = event.target.parentNode;\n    if (parent.getAttribute('id') == \"menu\") {\n      event.preventDefault()\n      Object(_views_click__WEBPACK_IMPORTED_MODULE_11__[\"default\"])('.menu')\n    } else if (parent.getAttribute('id') == \"map\") {\n      event.preventDefault()\n      Object(_views_click__WEBPACK_IMPORTED_MODULE_11__[\"default\"])('.map')\n\n    } else if (parent.getAttribute('id') == \"telephone\") {\n      event.preventDefault()\n      Object(_views_click__WEBPACK_IMPORTED_MODULE_11__[\"default\"])('.call')\n    }\n  }\n\n  // Render for localData\n  const telephone = document.getElementById('footer-telephone')\n  const email = document.getElementById('footer-email')\n  const address = document.getElementById('footer-address')\n  const schedule = document.getElementById('footer-schedule')\n  const instagram = document.getElementById('instagram')\n  const facebook = document.getElementById('facebook')\n  const map = document.getElementById('social-map')\n\n  telephone.textContent = _config_LocalData__WEBPACK_IMPORTED_MODULE_12__[\"default\"].telephone\n  telephone.setAttribute('href', `tel:${_config_LocalData__WEBPACK_IMPORTED_MODULE_12__[\"default\"].telephone}`)\n  email.setAttribute('href', `mailto:${_config_LocalData__WEBPACK_IMPORTED_MODULE_12__[\"default\"].email}`)\n  email.textContent = _config_LocalData__WEBPACK_IMPORTED_MODULE_12__[\"default\"].email\n  address.textContent = _config_LocalData__WEBPACK_IMPORTED_MODULE_12__[\"default\"].address\n  schedule.textContent = _config_LocalData__WEBPACK_IMPORTED_MODULE_12__[\"default\"].schedule\n  instagram.setAttribute('href', _config_LocalData__WEBPACK_IMPORTED_MODULE_12__[\"default\"].instagram)\n  facebook.setAttribute('href', _config_LocalData__WEBPACK_IMPORTED_MODULE_12__[\"default\"].facebook)\n  map.setAttribute('src', _config_LocalData__WEBPACK_IMPORTED_MODULE_12__[\"default\"].map)\n\n\n  // SEND CALL FORM\n  formSicial.addEventListener(\"submit\", getValueOnCall)\n  formFooter.addEventListener(\"submit\", getValueOnCall)\n\n  function getValueOnCall(e) {\n    e.preventDefault();\n    e.stopPropagation();\n    const parent = e.target.parentNode;\n    const objectCall = Object(_views_form__WEBPACK_IMPORTED_MODULE_13__[\"validationForm\"])(e);\n    if (objectCall) {\n      Object(_views_form__WEBPACK_IMPORTED_MODULE_13__[\"sendCallForm\"])(objectCall)\n      if (parent.classList.contains('call')) {\n        parent.style.display = 'none'\n      }\n    }\n  }\n\n  // block social jumping\n  window.addEventListener('scroll', function() {\n  if (window.innerWidth > 640) {\n\n    if (document.documentElement.scrollTop > 200) {\n      social.style.top = '5px'\n    }\n    if (document.documentElement.scrollTop < 200) {\n      social.style.top = '200px'\n    }\n  }\n  if (window.innerWidth < 640) {\n    if (document.documentElement.scrollTop > 140) {\n      social.style.top = '5px'\n    }\n    if (document.documentElement.scrollTop < 200) {\n      social.style.top = '140px'\n    }\n  }\n});\n\n  _plugins_wow__WEBPACK_IMPORTED_MODULE_8__[\"default\"].init();\n})\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../style/index.scss */ \"./src/style/index.scss\");\n/* harmony import */ var _style_index_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_index_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _img_open_menu_1_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../img/open-menu-1.png */ \"./src/img/open-menu-1.png\");\n/* harmony import */ var _img_favicon_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../img/favicon.png */ \"./src/img/favicon.png\");\n/* harmony import */ var _img_facebook_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../img/facebook.svg */ \"./src/img/facebook.svg\");\n/* harmony import */ var _img_instagram_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../img/instagram.svg */ \"./src/img/instagram.svg\");\n/* harmony import */ var _img_google_maps_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../img/google-maps.svg */ \"./src/img/google-maps.svg\");\n/* harmony import */ var _img_telephone_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../img/telephone.svg */ \"./src/img/telephone.svg\");\n/* harmony import */ var _img_tail_spin_svg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../img/tail-spin.svg */ \"./src/img/tail-spin.svg\");\n/* harmony import */ var _img_1_jpeg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../img/1.jpeg */ \"./src/img/1.jpeg\");\n/* harmony import */ var _img_2_jpeg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../img/2.jpeg */ \"./src/img/2.jpeg\");\n/* harmony import */ var _img_3_jpeg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../img/3.jpeg */ \"./src/img/3.jpeg\");\n/* harmony import */ var _img_4_jpeg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../img/4.jpeg */ \"./src/img/4.jpeg\");\n/* harmony import */ var _img_5_jpeg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../img/5.jpeg */ \"./src/img/5.jpeg\");\n/* harmony import */ var _img_6_jpeg__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../img/6.jpeg */ \"./src/img/6.jpeg\");\n/* harmony import */ var _plugins_wow__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./plugins/wow */ \"./src/js/plugins/wow.js\");\n/* harmony import */ var _services_Api__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./services/Api */ \"./src/js/services/Api.js\");\n/* harmony import */ var _views_categories__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./views/categories */ \"./src/js/views/categories.js\");\n/* harmony import */ var _views_click__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./views/click */ \"./src/js/views/click.js\");\n/* harmony import */ var _config_LocalData__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./config/LocalData */ \"./src/js/config/LocalData.js\");\n/* harmony import */ var _views_form__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./views/form */ \"./src/js/views/form.js\");\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nconst formFooter = document.forms.form_footer;\nconst formSicial = document.forms.form_social;\nconst mian = document.querySelector('.main')\nconst social = document.querySelector('.social')\n\nconst hellopreloader = document.getElementById(\"hellopreloader_preload\");\n\nwindow.onload = function () {\n\n  // Render for Categories\n  _services_Api__WEBPACK_IMPORTED_MODULE_15__[\"default\"].getCategories().then((response) => {\n    Object(_views_categories__WEBPACK_IMPORTED_MODULE_16__[\"default\"])(response.data, mian)\n    if (response.status === 200) {\n      console.log(`Get categories status = ${response.status}`);\n      hellopreloader.style.display = \"none\";\n    }\n  })\n}\n\ndocument.addEventListener(\"DOMContentLoaded\", () => {\n  // CLICK ON SOCIAL\n  social.addEventListener('click', getEventOnIcon)\n\n  function getEventOnIcon(event) {\n    const parent = event.target.parentNode;\n    if (parent.getAttribute('id') == \"menu\") {\n      event.preventDefault()\n      Object(_views_click__WEBPACK_IMPORTED_MODULE_17__[\"default\"])('.menu')\n    } else if (parent.getAttribute('id') == \"map\") {\n      event.preventDefault()\n      Object(_views_click__WEBPACK_IMPORTED_MODULE_17__[\"default\"])('.map')\n\n    } else if (parent.getAttribute('id') == \"telephone\") {\n      event.preventDefault()\n      Object(_views_click__WEBPACK_IMPORTED_MODULE_17__[\"default\"])('.call')\n    }\n  }\n\n  // Render for localData\n  const telephone = document.getElementById('footer-telephone')\n  const email = document.getElementById('footer-email')\n  const address = document.getElementById('footer-address')\n  const schedule = document.getElementById('footer-schedule')\n  const instagram = document.getElementById('instagram')\n  const facebook = document.getElementById('facebook')\n  const map = document.getElementById('social-map')\n\n  telephone.textContent = _config_LocalData__WEBPACK_IMPORTED_MODULE_18__[\"default\"].telephone\n  telephone.setAttribute('href', `tel:${_config_LocalData__WEBPACK_IMPORTED_MODULE_18__[\"default\"].telephone}`)\n  email.setAttribute('href', `mailto:${_config_LocalData__WEBPACK_IMPORTED_MODULE_18__[\"default\"].email}`)\n  email.textContent = _config_LocalData__WEBPACK_IMPORTED_MODULE_18__[\"default\"].email\n  address.textContent = _config_LocalData__WEBPACK_IMPORTED_MODULE_18__[\"default\"].address\n  schedule.textContent = _config_LocalData__WEBPACK_IMPORTED_MODULE_18__[\"default\"].schedule\n  instagram.setAttribute('href', _config_LocalData__WEBPACK_IMPORTED_MODULE_18__[\"default\"].instagram)\n  facebook.setAttribute('href', _config_LocalData__WEBPACK_IMPORTED_MODULE_18__[\"default\"].facebook)\n  map.setAttribute('src', _config_LocalData__WEBPACK_IMPORTED_MODULE_18__[\"default\"].map)\n\n\n  // SEND CALL FORM\n  formSicial.addEventListener(\"submit\", getValueOnCall)\n  formFooter.addEventListener(\"submit\", getValueOnCall)\n\n  function getValueOnCall(e) {\n    e.preventDefault();\n    e.stopPropagation();\n    const parent = e.target.parentNode;\n    const objectCall = Object(_views_form__WEBPACK_IMPORTED_MODULE_19__[\"validationForm\"])(e);\n    if (objectCall) {\n      Object(_views_form__WEBPACK_IMPORTED_MODULE_19__[\"sendCallForm\"])(objectCall)\n      if (parent.classList.contains('call')) {\n        parent.style.display = 'none'\n      }\n    }\n  }\n\n  // block social jumping\n  window.addEventListener('scroll', function() {\n  if (window.innerWidth > 640) {\n\n    if (document.documentElement.scrollTop > 200) {\n      social.style.top = '5px'\n    }\n    if (document.documentElement.scrollTop < 200) {\n      social.style.top = '200px'\n    }\n  }\n  if (window.innerWidth < 640) {\n    if (document.documentElement.scrollTop > 140) {\n      social.style.top = '5px'\n    }\n    if (document.documentElement.scrollTop < 200) {\n      social.style.top = '140px'\n    }\n  }\n});\n\n  _plugins_wow__WEBPACK_IMPORTED_MODULE_14__[\"default\"].init();\n})\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ }),
 

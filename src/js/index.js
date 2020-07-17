@@ -6,6 +6,12 @@ import "../img/instagram.svg"
 import "../img/google-maps.svg"
 import "../img/telephone.svg"
 import "../img/tail-spin.svg"
+import "../img/1.jpeg"
+import "../img/2.jpeg"
+import "../img/3.jpeg"
+import "../img/4.jpeg"
+import "../img/5.jpeg"
+import "../img/6.jpeg"
 
 import wow from './plugins/wow'
 import api from './services/Api'
