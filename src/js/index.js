@@ -10,13 +10,12 @@ import "../img/tail-spin.svg"
 import wow from './plugins/wow'
 import api from './services/Api'
 import getData from './views/categories'
+import showHideModal from './views/click'
+import localData from './config/LocalData'
 import {
   validationForm,
   sendCallForm
 } from './views/form'
-import showHideModal from './views/click'
-import localData from './config/LocalData'
-
 
 const hellopreloader = document.getElementById("hellopreloader_preload");
 
@@ -31,23 +30,20 @@ function fadeOutnojquery(el) {
   }, 16);
 }
 window.onload = function () {
-  setTimeout(function () {
-    fadeOutnojquery(hellopreloader);
-  }, 1000);
-};
 
+  const formFooter = document.forms.form_footer;
+  const formSicial = document.forms.form_social;
+  const mian = document.querySelector('.main')
+  const social = document.querySelector('.social')
 
-const formFooter = document.forms.form_footer;
-const formSicial = document.forms.form_social;
-const mian = document.querySelector('.main')
-const social = document.querySelector('.social')
-
-// Render for Categories
-api.getCategories().then((response) => {
-  console.log(response.status);
-  getData(response.data, mian)
-})
-
+  // Render for Categories
+  api.getCategories().then((response) => {
+    getData(response.data, mian)
+    if (response.status === 200) {
+      fadeOutnojquery(hellopreloader);
+    }
+  })
+}
 // CLICK ON SOCIAL
 social.addEventListener('click', getEventOnIcon)
 
