@@ -2,7 +2,7 @@ const path = require('path');
 const {
   CleanWebpackPlugin
 } = require('clean-webpack-plugin');
-
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
   entry: {
     index: './src/js/index.js',
@@ -11,28 +11,11 @@ module.exports = {
     path: path.resolve(__dirname, 'staticfile'),
     filename: 'js/app.js'
   },
-
-  devServer: {
-    contentBase: path.resolve(__dirname, 'staticfile'),
-    hot: true,
-    serveIndex: true,
-    proxy: {
-      '!/staticfile/**': {
-        target: 'http://localhost:8000/', // points to django dev server
-        changeOrigin: true,
-      },
-    },
+  watch: true,
+  watchOptions: {
+    ignored: /node_modules/,
+    poll: 1000,
   },
-  // devServer: {
-  //   publicPath: '',
-  //   port: 9000,
-  //   contentBase: path.join(process.cwd(), 'staticfile'),
-  //   host: 'localhost',
-  //   historyApiFallback: true,
-  //   noInfo: false,
-  //   stats: 'minimal',
-  //   hot: true,
-  // },
 
   module: {
     rules: [
@@ -48,18 +31,6 @@ module.exports = {
           'sass-loader',
         ],
       },
-      // css || sass
-      // {
-      //   test: /\.scss$/,
-      //   exclude: /(node_modules|bower_components)/,
-      //   use: [{
-      //     loader: 'css-loader'
-      //   },
-      //   {
-      //     loader: 'sass-loader'
-      //   }
-      //   ]
-      // },
       // fonts
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,

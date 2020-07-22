@@ -1,6 +1,6 @@
 function showHideModal(cls) {
   const element = document.querySelector(cls)
-  const clos = element.querySelector('.fa-times')
+  const clos = element.querySelector('.close-icon')
 
   function closeWindow() {
     element.classList.remove('zoomIn')

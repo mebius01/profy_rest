@@ -1,4 +1,4 @@
-@import "./reset.css";
+@import "../style/reset.css";
 @import url('https://fonts.googleapis.com/css2?family=Mr+De+Haviland&family=Rubik:wght@300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 $heightFooter: 250px;
@@ -97,8 +97,6 @@ $footerColor: #373f48;
   animation-name: pulse;
   animation-duration: 0.5s;
   animation-fill-mode: both;
-  // animation-iteration-count: infinite;
-
 
   @keyframes pulse {
     0% {
@@ -179,18 +177,25 @@ body {
   box-shadow: -1px 1px 9px 1px rgba(0, 0, 0, 0.6);
 }
 
+
 .close-icon {
   cursor: pointer;
   display: block;
-  width: 32px;
-  height: 32px;
-  // color: $redLine;
-  // font-size: 32px;
   position: absolute;
-  padding: 18px;
-  // z-index: 2;
+  padding: 8px;
   top: 0;
   right: 0;
+
+  &::before {
+    content: "\2716";
+    font-size: 32px;
+    color: $redLine;
+  }
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .header {
@@ -341,28 +346,27 @@ body {
         transition-duration: 0.3s;
       }
 
-      .fa-long-arrow-alt-right {
-        margin-left: 38px;
+      .article__title::after {
+        content: "\2192";
+        font-size: 38px;
         color: $footerColor;
-        // font-size: 20px;
         transition-property: font-size color;
         transition-duration: 0.5s;
 
-        // @media (min-width: 992px) and (max-width: 1199px) {
-        //   right: -100vh + 35;
-        // }
-
-        // @media (min-width: 320px) and (max-width: 991px) {
-        //   display: none;
-        // }
+        &:hover {
+          color: $redLine;
+        }
       }
+
 
       &:hover {
         background-color: white;
         top: -222 - 80 - 143px;
         padding: 143px 10px;
 
-        .fa-long-arrow-alt-right {
+        .article__title::after {
+          content: "\2192";
+          font-size: 42px;
           color: $redLine;
         }
 
@@ -382,6 +386,7 @@ body {
       font-size: 18px;
       line-height: 20px;
     }
+
 
     &__link {
       text-decoration: none;
@@ -429,11 +434,13 @@ body {
           @extend .focus
         }
       }
+
       &__icon {
         margin-right: 5px;
         width: 20px;
         height: 20px;
       }
+
       i {
         margin-right: 5px;
         font-size: 20px;
@@ -512,9 +519,9 @@ body {
           color: white;
           width: 100%;
 
-          &:hover {
-            @extend .pulse;
-          }
+          // &:hover {
+          //   @extend .pulse;
+          // }
         }
 
       }

@@ -17,12 +17,12 @@ function createArticle(object) {
   article.insertAdjacentHTML("afterbegin",
     `
   <div class="article__img">
-      <img src="${object.img}" alt="" class="img" />
+      <img src="${object.img}" alt="${object.title}" class="img" />
     </div>
     <div class="article__content">
      <!-- <a href="" class="article__link"> -->
         <h2 class="article__title h2">
-          ${object.title} <i class="fas fa-long-arrow-alt-right"></i>
+          ${object.title}
         </h2>
       <!-- </a> -->
       <p class="article__text">${object.description}</p>

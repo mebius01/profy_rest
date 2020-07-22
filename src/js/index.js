@@ -1,7 +1,7 @@
 import '../style/index.scss'
 
-import '../img/menu.svg'
-import "../img/favicon.png"
+import "../img/menu.svg"
+import "../img/favicon-32x32.png"
 import "../img/facebook.svg"
 import "../img/instagram.svg"
 import "../img/google-maps.svg"
@@ -13,7 +13,7 @@ import "../img/map.svg"
 import "../img/mail.svg"
 import "../img/smartphone.svg"
 
-import "../img/close.svg"
+// import "../img/close.svg"
 
 // import "../img/1.jpeg"
 // import "../img/2.jpeg"
@@ -109,27 +109,26 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // block social jumping
-  window.addEventListener('scroll', function() {
-  if (window.innerWidth > 640) {
+  window.addEventListener('scroll', function () {
+    if (window.innerWidth > 640) {
 
-    if (document.documentElement.scrollTop > 200) {
-      social.style.top = '5px'
+      if (document.documentElement.scrollTop > 200) {
+        social.style.top = '5px'
+      }
+      if (document.documentElement.scrollTop < 200) {
+        social.style.top = '200px'
+      }
     }
-    if (document.documentElement.scrollTop < 200) {
-      social.style.top = '200px'
+    if (window.innerWidth < 640) {
+      if (document.documentElement.scrollTop > 140) {
+        social.style.top = '5px'
+      }
+      if (document.documentElement.scrollTop < 200) {
+        social.style.top = '140px'
+      }
     }
-  }
-  if (window.innerWidth < 640) {
-    if (document.documentElement.scrollTop > 140) {
-      social.style.top = '5px'
-    }
-    if (document.documentElement.scrollTop < 200) {
-      social.style.top = '140px'
-    }
-  }
-});
+  });
 
   wow.init();
   console.log("test web pack");
 })
-
