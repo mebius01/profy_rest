@@ -1,17 +1,27 @@
 import '../style/index.scss'
-import '../img/open-menu-1.png'
+
+import '../img/menu.svg'
 import "../img/favicon.png"
 import "../img/facebook.svg"
 import "../img/instagram.svg"
 import "../img/google-maps.svg"
 import "../img/telephone.svg"
+
 import "../img/tail-spin.svg"
-import "../img/1.jpeg"
-import "../img/2.jpeg"
-import "../img/3.jpeg"
-import "../img/4.jpeg"
-import "../img/5.jpeg"
-import "../img/6.jpeg"
+import "../img/clock.svg"
+import "../img/map.svg"
+import "../img/mail.svg"
+import "../img/smartphone.svg"
+
+import "../img/close.svg"
+
+// import "../img/1.jpeg"
+// import "../img/2.jpeg"
+// import "../img/3.jpeg"
+// import "../img/4.jpeg"
+// import "../img/5.jpeg"
+// import "../img/6.jpeg"
+
 
 import wow from './plugins/wow'
 import api from './services/Api'
@@ -120,4 +130,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
   wow.init();
+  console.log("test web pack");
 })
+

@@ -179,6 +179,20 @@ body {
   box-shadow: -1px 1px 9px 1px rgba(0, 0, 0, 0.6);
 }
 
+.close-icon {
+  cursor: pointer;
+  display: block;
+  width: 32px;
+  height: 32px;
+  // color: $redLine;
+  // font-size: 32px;
+  position: absolute;
+  padding: 18px;
+  // z-index: 2;
+  top: 0;
+  right: 0;
+}
+
 .header {
   position: relative;
   height: $heightHeader;
@@ -415,7 +429,11 @@ body {
           @extend .focus
         }
       }
-
+      &__icon {
+        margin-right: 5px;
+        width: 20px;
+        height: 20px;
+      }
       i {
         margin-right: 5px;
         font-size: 20px;

@@ -5,28 +5,34 @@ const {
 
 module.exports = {
   entry: {
-    // 'js/app.js': './src/js/index.js', // scripts
-    // 'css/main.css': './src/style/index.scss' //styles
     index: './src/js/index.js',
-    // main: './src/style/index.scss' //styles
   },
   output: {
     path: path.resolve(__dirname, 'staticfile'),
-    // filename: "[name]"
-    // path: path.resolve(__dirname, 'staticfile'),
     filename: 'js/app.js'
   },
 
   devServer: {
-    publicPath: '',
-    port: 9000,
-    contentBase: path.join(process.cwd(), 'staticfile'),
-    host: 'localhost',
-    historyApiFallback: true,
-    noInfo: false,
-    stats: 'minimal',
+    contentBase: path.resolve(__dirname, 'staticfile'),
     hot: true,
+    serveIndex: true,
+    proxy: {
+      '!/staticfile/**': {
+        target: 'http://localhost:8000/', // points to django dev server
+        changeOrigin: true,
+      },
+    },
   },
+  // devServer: {
+  //   publicPath: '',
+  //   port: 9000,
+  //   contentBase: path.join(process.cwd(), 'staticfile'),
+  //   host: 'localhost',
+  //   historyApiFallback: true,
+  //   noInfo: false,
+  //   stats: 'minimal',
+  //   hot: true,
+  // },
 
   module: {
     rules: [

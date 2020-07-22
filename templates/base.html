@@ -38,25 +38,25 @@
     <div class="row">
       <ul class="contact">
         <li class="contact__item">
-          <i class="fas fa-mobile-alt"></i>
+        <img class="contact__icon" src="{% static '/img/smartphone.svg' %}" alt="">
           <a href="tel:+380963128203" id="footer-telephone"
             class="contact__link">
           </a>
         </li>
         <li class="contact__item">
-          <i class="far fa-envelope"></i>
+          <img class="contact__icon" src="{% static '/img/mail.svg' %}" alt="">
           <a id="footer-email" href="mailto:profy.shop.top@gmail.com"
             class="contact__link">profy.shop.top@gmail.com
           </a>
         </li>
         <li class="contact__item">
-          <i class="fas fa-map-marked-alt"></i>
+          <img class="contact__icon" src="{% static '/img/map.svg' %}" alt="">
           <!-- <a href="" class="contact__link"></a> -->
           <span id="footer-address" class="contact__text">ул. Космонавтов 124 Б,
             офис 2</span>
         </li>
         <li class="contact__item">
-          <i class="far fa-clock"></i>
+          <img class="contact__icon" src="{% static '/img/clock.svg' %}" alt="">
           <span id="footer-schedule" class="contact__text">10.00 - 17.00</span>
         </li>
       </ul>
@@ -93,7 +93,7 @@
   <ul class="social">
     <li class="social__item" hidden>
       <a href="" class="social__link" target="_blank" id="menu"><img
-          src="{% static '/img/open-menu-1.png' %}" /></a>
+          src="{% static '/img/menu.svg' %}" /></a>
     </li>
     <li class="social__item">
       <a href="https://www.facebook.com/profyshoptop" class="social__link"
@@ -126,7 +126,8 @@
     <li class="menu__item"><a href="" class="menu__link">Menu Link 4</a></li>
   </ul>
   <div class="map">
-    <i class="fas fa-times" id="fa-times-map"></i>
+    <span class="close-icon" id="fa-times-map"></span>
+    <!-- <i class="fas fa-times" id="fa-times-map"></i> -->
     <iframe id="social-map" frameborder="0" style="border: 0;"
       allowfullscreen="" aria-hidden="false" tabindex="0">
     </iframe>
