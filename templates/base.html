@@ -1,223 +1,161 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      href="{% static '/img/favicon-32x32.png' %}"
-    />
-    {% block title %}
-    <title>Title</title>
-    {% endblock title %}
-  </head>
 
-  <body>
-    <div id="hellopreloader">
-      <div id="hellopreloader_preload"></div>
-      <p></p>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png"
+    href="{% static '/img/favicon-32x32.png' %}" />
+  {% block title %}
+  <title>Title</title>
+  {% endblock title %}
+</head>
 
-    <header class="header">
-      <div class="strip blue"><span class="strict-letter">P</span></div>
-      <div class="strip green">
-        <span class="strict-letter">R</span><span class="soft-letter">S</span>
-      </div>
-      <div class="strip red">
-        <span class="strict-letter">O</span><span class="soft-letter">h</span>
-      </div>
-      <div class="strip orange">
-        <span class="strict-letter">F</span
-        ><span class="soft-letter" style="color: white;">o</span>
-      </div>
-      <div class="strip yellow">
-        <span class="strict-letter">Y</span><span class="soft-letter">p</span>
-      </div>
-    </header>
-    {% block content %} Reandr Content {% endblock content %}
-    <footer class="footer">
-      <div class="row">
-        <ul class="contact">
-          <li class="contact__item">
-            <img
-              class="contact__icon"
-              src="{% static '/img/smartphone.svg' %}"
-              alt=""
-            />
-            <a
-              href="tel:+380963128203"
-              id="footer-telephone"
-              class="contact__link"
-            >
-            </a>
-          </li>
-          <li class="contact__item">
-            <img
-              class="contact__icon"
-              src="{% static '/img/mail.svg' %}"
-              alt=""
-            />
-            <a
-              id="footer-email"
-              href="mailto:profy.shop.top@gmail.com"
-              class="contact__link"
-              >profy.shop.top@gmail.com
-            </a>
-          </li>
-          <li class="contact__item">
-            <img
-              class="contact__icon"
-              src="{% static '/img/map.svg' %}"
-              alt=""
-            />
-            <!-- <a href="" class="contact__link"></a> -->
-            <span id="footer-address" class="contact__text"
-              >ул. Космонавтов 124 Б, офис 2</span
-            >
-          </li>
-          <li class="contact__item">
-            <img
-              class="contact__icon"
-              src="{% static '/img/clock.svg' %}"
-              alt=""
-            />
-            <span id="footer-schedule" class="contact__text"
-              >10.00 - 17.00</span
-            >
-          </li>
-        </ul>
-        <form class="form" name="form_footer">
-          <div class="form__item">
-            <input type="text" name="call__text" placeholder="Ваше Имя" />
-          </div>
-          <div class="form__item">
-            <input
-              type="tel"
-              name="call__tel"
-              placeholder="+38(050)-123-23-34"
-            />
-          </div>
-          <div class="form__item" hidden>
-            <textarea
-              name="comment"
-              rows="3"
-              placeholder="Комментарий"
-            ></textarea>
-          </div>
-          <div class="form__item">
-            <input type="submit" value="Жду Звонка" />
-          </div>
-        </form>
-      </div>
-      <div class="footer__line"></div>
-      <div class="copyright">
-        <p class="copyright__item" style="color: #e74c3c;">
-          Profy Shop <span style="color: white;">© 2020</span>
-        </p>
-        <a
-          style="text-decoration: none; color: #e74c3c;"
-          href="mailto:8th.port@gmail.com"
-          class="copyright__link"
-        >
-          <span style="color: #3498db;">created 😜</span>
-          <span style="color: white;">:</span>
-          <span style="color: #e74c3c;"></span> 8-th Port</a
-        >
-      </div>
-    </footer>
-    <ul class="social">
-      <li class="social__item" hidden>
-        <a href="" class="social__link" target="_blank" id="menu">
-          <img src="{% static '/img/menu.svg' %}" alt="Меню сайта" />
-        </a>
-      </li>
-      <li class="social__item">
-        <a
-          href="https://www.facebook.com/profyshoptop"
-          class="social__link"
-          target="_blank"
-          id="facebook"
-          ><img
-            src="{% static '/img/facebook.svg' %}"
-            alt="Facebook Profy Shop"
-        /></a>
-      </li>
-      <li class="social__item">
-        <a
-          href="https://www.instagram.com/profyshop_top/"
-          class="social__link"
-          target="_blank"
-          id="instagram"
-          ><img
-            src="{% static '/img/instagram.svg' %}"
-            alt="Instagram Profy Shop"
-        /></a>
-      </li>
-      <li class="social__item">
-        <a href="" class="social__link" target="_blank" id="map">
-          <img
-            src="{% static '/img/google-maps.svg' %}"
-            alt="Где мы находимся"
-          />
-        </a>
-      </li>
-      <li class="social__item">
-        <a href="" class="social__link" target="_blank" id="telephone">
-          <img
-            src="{% static '/img/telephone.svg' %}"
-            alt="Кнопка Жду Звонка"
-          />
-        </a>
-      </li>
-    </ul>
-    <ul class="menu" hidden>
-      <li>
-        <button class="close-icon close"></button>
-      </li>
-      <li class="menu__item">
-        <a href="./index.html" class="menu__link">Главная</a>
-      </li>
-      <li class="menu__item">
-        <a href="./about.html" class="menu__link">О Нас</a>
-      </li>
-      <li class="menu__item"><a href="" class="menu__link">Menu Link 3</a></li>
-      <li class="menu__item"><a href="" class="menu__link">Menu Link 4</a></li>
-    </ul>
-    <div class="map">
-      <button class="close-icon close"></button>
-      <iframe
-        id="social-map"
-        style="border: 0;"
-        allowfullscreen=""
-        aria-hidden="false"
-        tabindex="0"
-      >
-      </iframe>
+<body>
+  {% block preloader %}Preloader{% endblock preloader %}
+
+  <header class="header">
+    <div class="strip blue"><span class="strict-letter">P</span></div>
+    <div class="strip green">
+      <span class="strict-letter">R</span><span class="soft-letter">S</span>
     </div>
-    <div class="call">
-      <button class="close-icon close"></button>
-      <form class="form" name="form_social">
+    <div class="strip red">
+      <span class="strict-letter">O</span><span class="soft-letter">h</span>
+    </div>
+    <div class="strip orange">
+      <span class="strict-letter">F</span><span class="soft-letter"
+        style="color: white;">o</span>
+    </div>
+    <div class="strip yellow">
+      <span class="strict-letter">Y</span><span class="soft-letter">p</span>
+    </div>
+  </header>
+  {% block content %} Reandr Content {% endblock content %}
+  <footer class="footer">
+    <div class="row">
+      <ul class="contact">
+        <li class="contact__item">
+          <img class="contact__icon" src="{% static '/img/smartphone.svg' %}"
+            alt="" />
+          <a href="tel:+380963128203" id="footer-telephone"
+            class="contact__link">
+          </a>
+        </li>
+        <li class="contact__item">
+          <img class="contact__icon" src="{% static '/img/mail.svg' %}"
+            alt="" />
+          <a id="footer-email" href="mailto:profy.shop.top@gmail.com"
+            class="contact__link">profy.shop.top@gmail.com
+          </a>
+        </li>
+        <li class="contact__item">
+          <img class="contact__icon" src="{% static '/img/map.svg' %}" alt="" />
+          <!-- <a href="" class="contact__link"></a> -->
+          <span id="footer-address" class="contact__text">ул. Космонавтов 124 Б,
+            офис 2</span>
+        </li>
+        <li class="contact__item">
+          <img class="contact__icon" src="{% static '/img/clock.svg' %}"
+            alt="" />
+          <span id="footer-schedule" class="contact__text">10.00 - 17.00</span>
+        </li>
+      </ul>
+      <form class="form" name="form_footer">
         <div class="form__item">
           <input type="text" name="call__text" placeholder="Ваше Имя" />
         </div>
         <div class="form__item">
           <input type="tel" name="call__tel" placeholder="+38(050)-123-23-34" />
         </div>
-        <div class="form__item">
-          <textarea
-            name="comment"
-            rows="3"
-            placeholder="Комментарий"
-          ></textarea>
+        <div class="form__item" hidden>
+          <textarea name="comment" rows="3"
+            placeholder="Комментарий"></textarea>
         </div>
         <div class="form__item">
           <input type="submit" value="Жду Звонка" />
         </div>
       </form>
     </div>
-    <div class="dark-line"></div>
-    <script src="{% static 'js/app.js' %}"></script>
-  </body>
+    <div class="footer__line"></div>
+    <div class="copyright">
+      <p class="copyright__item" style="color: #e74c3c;">
+        Profy Shop <span style="color: white;">© 2020</span>
+      </p>
+      <a style="text-decoration: none; color: #e74c3c;"
+        href="mailto:8th.port@gmail.com" class="copyright__link">
+        <span style="color: #3498db;">created 😜</span>
+        <span style="color: white;">:</span>
+        <span style="color: #e74c3c;"></span> 8-th Port</a>
+    </div>
+  </footer>
+  <ul class="social">
+    <li class="social__item">
+      <a href="" class="social__link" target="_blank" id="menu">
+        <img src="{% static '/img/open-menu.svg' %}" alt="Меню сайта" />
+      </a>
+    </li>
+    <li class="social__item">
+      <a href="https://www.facebook.com/profyshoptop" class="social__link"
+        target="_blank" id="facebook"><img
+          src="{% static '/img/facebook.svg' %}"
+          alt="Facebook Profy Shop" /></a>
+    </li>
+    <li class="social__item">
+      <a href="https://www.instagram.com/profyshop_top/" class="social__link"
+        target="_blank" id="instagram"><img
+          src="{% static '/img/instagram.svg' %}"
+          alt="Instagram Profy Shop" /></a>
+    </li>
+    <li class="social__item">
+      <a href="" class="social__link" target="_blank" id="map">
+        <img src="{% static '/img/google-maps.svg' %}" alt="Где мы находимся" />
+      </a>
+    </li>
+    <li class="social__item">
+      <a href="" class="social__link" target="_blank" id="telephone">
+        <img src="{% static '/img/telephone.svg' %}" alt="Кнопка Жду Звонка" />
+      </a>
+    </li>
+  </ul>
+  <ul class="menu" hidden>
+    <li>
+      <button class="close-icon close"></button>
+    </li>
+    <li class="menu__item">
+      <a href="{% url 'profy:index' %}" class="menu__link">Главная</a>
+    </li>
+    <li class="menu__item"><a href="" class="menu__link">Menu Link 3</a></li>
+    <li class="menu__item"><a href="" class="menu__link">Menu Link 4</a></li>
+    <li class="menu__item">
+      <a href="{% url 'profy:about' %}" class="menu__link">О Нас</a>
+    </li>
+  </ul>
+  <div class="map">
+    <button class="close-icon close"></button>
+    <iframe id="social-map" style="border: 0;" allowfullscreen=""
+      aria-hidden="false" tabindex="0">
+    </iframe>
+  </div>
+  <div class="call">
+    <button class="close-icon close"></button>
+    <form class="form" name="form_social">
+      <div class="form__item">
+        <input type="text" name="call__text" placeholder="Ваше Имя" />
+      </div>
+      <div class="form__item">
+        <input type="tel" name="call__tel" placeholder="+38(050)-123-23-34" />
+      </div>
+      <div class="form__item">
+        <textarea name="comment" rows="3" placeholder="Комментарий"></textarea>
+      </div>
+      <div class="form__item">
+        <input type="submit" value="Жду Звонка" />
+      </div>
+    </form>
+  </div>
+  <div class="dark-line"></div>
+  <script src="{% static 'js/app.js' %}"></script>
+</body>
+
 </html>

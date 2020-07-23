@@ -2,5 +2,11 @@
 {% load static %}
 {% block title %}<title> Profy Shop Top - Главная страница </title>
 {% endblock title %}
-{% block content %}<main class="main"></main>{% endblock content %}
+{% block preloader %}
+<div id="hellopreloader">
+  <div id="hellopreloader_preload"></div>
+  <p></p>
+</div>
+{% endblock preloader %}
+{% block content %}<main class="categories"></main>{% endblock content %}
 {% block footer %}<footer></footer>{% endblock footer %}

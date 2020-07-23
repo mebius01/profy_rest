@@ -1,6 +1,6 @@
 import '../style/index.scss'
 
-import "../img/menu.svg"
+import "../img/open-menu.svg"
 import "../img/favicon-32x32.png"
 import "../img/facebook.svg"
 import "../img/instagram.svg"
@@ -35,7 +35,7 @@ import {
 
 const formFooter = document.forms.form_footer;
 const formSicial = document.forms.form_social;
-const mian = document.querySelector('.main')
+const categories = document.querySelector('.categories')
 const social = document.querySelector('.social')
 
 const hellopreloader = document.getElementById("hellopreloader_preload");
@@ -44,7 +44,7 @@ window.onload = function () {
 
   // Render for Categories
   api.getCategories().then((response) => {
-    getData(response.data, mian)
+    getData(response.data, categories)
     if (response.status === 200) {
       console.log(`Get categories status = ${response.status}`);
       hellopreloader.style.display = "none";

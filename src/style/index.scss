@@ -283,7 +283,7 @@ body {
   }
 }
 
-.main {
+.categories {
   width: 80%;
   margin: 40px auto;
 
@@ -391,6 +391,28 @@ body {
         @extend .focus;
       }
     }
+  }
+}
+
+.about {
+  @extend .categories;
+  @extend .shadow;
+  background-color: white;
+  color: $footerColor;
+  padding: 40px;
+  font-size: 28px;
+  line-height: 30px;
+
+  @media (min-width: 320px) and (max-width: 640px) {
+    padding-left: 20px;
+    width: auto;
+    margin: 20px auto;
+  }
+
+  hr {
+    background-color: #e74c3c;
+    height: 2px;
+    border: none;
   }
 }
 
@@ -567,8 +589,8 @@ body {
     padding: 2px;
 
     &:hover {
-        @extend .pulse;
-      }
+      @extend .pulse;
+    }
 
     &:focus {
       @extend .focus;

@@ -27,7 +27,8 @@ app_name = 'profy'
 
 
 urlpatterns = [
-    path('', TemplateView.as_view(template_name = 'profy/index.html'), name='index'),
+    path('', TemplateView.as_view(template_name='profy/index.html'), name='index'),
+    path('about/', TemplateView.as_view(template_name='profy/about.html'), name='about'),
     path('api/categories/', CategoriesList.as_view(), name='api_categories'),
     path('api/<int:pk>/', CategoriesDetail.as_view(), name='id_categories'),
     path('api/post/', CallsCreate.as_view(), name='calss_create'),
