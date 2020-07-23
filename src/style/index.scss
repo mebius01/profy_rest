@@ -179,6 +179,8 @@ body {
 
 .close-icon {
   cursor: pointer;
+  border: none;
+  background-color: $footerColor;
   display: block;
   position: absolute;
   padding: 8px;
