@@ -10,7 +10,6 @@ $textColor: #444444;
 $branColor: #530405;
 $footerColor: #373f48;
 
-
 .slideInLeft {
   animation-name: slideInLeft;
   animation-duration: 1s;
@@ -185,16 +184,11 @@ body {
   padding: 8px;
   top: 0;
   right: 0;
+  color: $redLine;
 
-  &::before {
+  &::after {
     content: "\2716";
     font-size: 32px;
-    color: $redLine;
-  }
-
-  img {
-    width: 20px;
-    height: 20px;
   }
 }
 
@@ -289,7 +283,6 @@ body {
 
 .main {
   width: 80%;
-  // height: calc(100vh - #{$heightFooterHeader}); // ! fix
   margin: 40px auto;
 
   @media (min-width: 320px) and (max-width: 640px) {
@@ -538,7 +531,7 @@ body {
   list-style: none;
   position: fixed;
   top: $heightHeader;
-  right: 0px;
+  right: 10px;
 
   @media (min-width: 320px) and (max-width: 640px) {
     top: $heightHeader - 60;
@@ -549,26 +542,44 @@ body {
     margin: 5px auto;
   }
 
+  // #facebook {
+  //   background: url('https://profy-shop.top/static/img/facebook.svg') no-repeat center;
+  // }
+  // #map {
+  //   background: url('https://profy-shop.top/static/img/google-maps.svg')no-repeat center;
+  // }
+  // #instagram {
+  //   background:url('https://profy-shop.top/static/img/instagram.svg')no-repeat center;
+  // }
+  // #menu {
+  //   background: url('https://profy-shop.top/static/img/menu.svg')no-repeat center;
+  // }
+  // #telephone {
+  //   background: url('https://profy-shop.top/static/img/telephone.svg')no-repeat center;
+  // }
   &__link {
     display: block;
     text-align: center;
-    // background-color: white;
+    // width: 32px;
+    // height: 32px;
     padding: 2px;
+
+    &:hover {
+        @extend .pulse;
+      }
 
     &:focus {
       @extend .focus;
-      height: 85%;
+      width: 32px;
+      height: 32px;
     }
 
     img {
       width: 32px;
       height: 32px;
-
-      &:hover {
-        @extend .pulse;
-      }
     }
   }
+
 }
 
 .map {
@@ -685,7 +696,6 @@ body {
 
 .thank {
   @extend .shadow;
-  // display: none;
   visibility: visible;
   position: fixed;
   top: 20px;
@@ -696,7 +706,6 @@ body {
   padding: 28px;
   width: 244px;
   height: auto;
-  // text-align: center;
   font-size: 18px;
 }
 
