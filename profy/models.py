@@ -37,4 +37,4 @@ class Categories(models.Model):
         return self.title
 
     def get_absolute_url(self):
-        return reverse("Categories_detail", kwargs={"pk": self.pk})
+        return reverse("Categories_detail", kwargs={"slug": self.slug})

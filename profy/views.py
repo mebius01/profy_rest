@@ -25,6 +25,7 @@ class CategoriesList(ListAPIView):
 class CategoriesDetail(RetrieveAPIView):
     queryset = Categories.objects.all()
     serializer_class = CategoriesSerializer
+    lookup_field = 'slug'
 
 
 class CallsCreate(CreateAPIView):

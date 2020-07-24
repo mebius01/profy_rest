@@ -617,7 +617,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nconst localData = {\n  teleph
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// const url = 'http://localhost:8000/api'\nconst url = 'https://profy-shop.top/api'\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (url);\n\n//# sourceURL=webpack:///./src/js/config/config.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nconst url = 'http://localhost:8000/api'\n// const url = 'https://profy-shop.top/api'\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (url);\n\n//# sourceURL=webpack:///./src/js/config/config.js?");
 
 /***/ }),
 
@@ -665,7 +665,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var axio
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nfunction getData(list, main) {\n  // Принимает массив response.data и css selector\n  const fragment = document.createDocumentFragment();\n\n  list.forEach(object => {\n    fragment.appendChild(createArticle(object));\n  });\n\n  main.appendChild(fragment);\n}\n\nfunction createArticle(object) {\n  const article = document.createElement(\"article\");\n  article.classList.add(\"article\", \"wow\", \"scale-in-ver-bottom\")\n  article.setAttribute(\"id\", object.id)\n  article.setAttribute(\"data-wow-offset\", \"222\")\n  article.insertAdjacentHTML(\"afterbegin\",\n    `\n  <div class=\"article__img\">\n      <img src=\"${object.img}\" alt=\"${object.title}\" class=\"img\" />\n    </div>\n    <div class=\"article__content\">\n     <!-- <a href=\"\" class=\"article__link\"> -->\n        <h2 class=\"article__title h2\">\n          ${object.title}\n        </h2>\n      <!-- </a> -->\n      <p class=\"article__text\">${object.description}</p>\n    </div>\n    `)\n  return article;\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (getData);\n\n//# sourceURL=webpack:///./src/js/views/categories.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nfunction getData(list, main) {\n  // Принимает массив response.data и css selector\n  const fragment = document.createDocumentFragment();\n\n  list.forEach(object => {\n    fragment.appendChild(createArticle(object));\n  });\n\n  main.appendChild(fragment);\n}\n\nfunction createArticle(object) {\n  const article = document.createElement(\"article\");\n  article.classList.add(\"article\", \"wow\", \"scale-in-ver-bottom\")\n  article.setAttribute(\"id\", object.id)\n  article.setAttribute(\"data-wow-offset\", \"222\")\n  article.insertAdjacentHTML(\"afterbegin\",\n    `\n  <div class=\"article__img\">\n      <img src=\"${object.img}\" alt=\"${object.title}\" class=\"img\" />\n    </div>\n    <div class=\"article__content\">\n     <a href=\"category/${object.slug}\" class=\"article__link\">\n        <h2 class=\"article__title h2\">\n          ${object.title}\n        </h2>\n      </a>\n      <p class=\"article__text\">${object.description}</p>\n    </div>\n    `)\n  return article;\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (getData);\n\n//# sourceURL=webpack:///./src/js/views/categories.js?");
 
 /***/ }),
 
