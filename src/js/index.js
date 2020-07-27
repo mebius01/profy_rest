@@ -129,6 +129,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  wow.init();
-  console.log("test web pack");
+  wow.init()
 })

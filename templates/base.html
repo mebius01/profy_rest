@@ -89,71 +89,10 @@
         <span style="color: #e74c3c;"></span> 8-th Port</a>
     </div>
   </footer>
-  <ul class="social">
-    <li class="social__item">
-      <a href="" class="social__link" target="_blank" id="menu">
-        <img src="{% static '/img/open-menu.svg' %}" alt="Меню сайта" />
-      </a>
-    </li>
-    <li class="social__item">
-      <a href="https://www.facebook.com/profyshoptop" class="social__link"
-        target="_blank" id="facebook"><img
-          src="{% static '/img/facebook.svg' %}"
-          alt="Facebook Profy Shop" /></a>
-    </li>
-    <li class="social__item">
-      <a href="https://www.instagram.com/profyshop_top/" class="social__link"
-        target="_blank" id="instagram"><img
-          src="{% static '/img/instagram.svg' %}"
-          alt="Instagram Profy Shop" /></a>
-    </li>
-    <li class="social__item">
-      <a href="" class="social__link" target="_blank" id="map">
-        <img src="{% static '/img/google-maps.svg' %}" alt="Где мы находимся" />
-      </a>
-    </li>
-    <li class="social__item">
-      <a href="" class="social__link" target="_blank" id="telephone">
-        <img src="{% static '/img/telephone.svg' %}" alt="Кнопка Жду Звонка" />
-      </a>
-    </li>
-  </ul>
-  <ul class="menu" hidden>
-    <li>
-      <button class="close-icon close"></button>
-    </li>
-    <li class="menu__item">
-      <a href="{% url 'profy:index' %}" class="menu__link">Главная</a>
-    </li>
-    <li class="menu__item"><a href="" class="menu__link">Menu Link 3</a></li>
-    <li class="menu__item"><a href="" class="menu__link">Menu Link 4</a></li>
-    <li class="menu__item">
-      <a href="{% url 'profy:about' %}" class="menu__link">О Нас</a>
-    </li>
-  </ul>
-  <div class="map">
-    <button class="close-icon close"></button>
-    <iframe id="social-map" style="border: 0;" allowfullscreen=""
-      aria-hidden="false" tabindex="0">
-    </iframe>
-  </div>
-  <div class="call">
-    <button class="close-icon close"></button>
-    <form class="form" name="form_social">
-      <div class="form__item">
-        <input type="text" name="call__text" placeholder="Ваше Имя" />
-      </div>
-      <div class="form__item">
-        <input type="tel" name="call__tel" placeholder="+38(050)-123-23-34" />
-      </div>
-      <div class="form__item">
-        <textarea name="comment" rows="3" placeholder="Комментарий"></textarea>
-      </div>
-      <div class="form__item">
-        <input type="submit" value="Жду Звонка" />
-      </div>
-    </form>
-  </div>
+{% include "include/_social.html" %}
+{% include "include/_menu.html" %}
+{% include "include/_map.html" %}
+{% include "include/_call.html" %}
   <div class="dark-line"></div>
   <script src="{% static 'js/app.js' %}"></script>
 </body>
