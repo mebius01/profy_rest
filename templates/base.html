@@ -1,7 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="ru">
-<script defer async src="{% static 'js/app.js' %}"></script>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,9 +9,10 @@
   {% block title %} #### Title #### {% endblock title %}
   {% block description %} #### Description #### {% endblock description %}
 </head>
-{% block schema %} #### Schema #### {% endblock schema %}
 <body>
+  <script defer async src="{% static 'js/app.js' %}"></script>
   <header class="header">
+    {% block schema %} #### Schema #### {% endblock schema %}
     <div class="logo" hidden>
       <img id="logo_pro" src="{% static 'img/logo.png' %}" alt="Логотип Profy Shop Top">
     </div>
