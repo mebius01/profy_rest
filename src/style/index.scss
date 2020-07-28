@@ -5,7 +5,7 @@ $heightFooter: 250px;
 $heightHeader: 200px;
 $heightFooterHeader: $heightHeader+$heightFooter;
 $height100: 100vh;
-$redLine: #e74c3c;
+$redLine: rgb(231, 76, 60);
 $textColor: #444444;
 $branColor: #530405;
 $footerColor: #373f48;
@@ -196,7 +196,7 @@ body {
 
 .header {
   position: relative;
-  height: $heightHeader;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -245,7 +245,7 @@ body {
   }
 
   .red {
-    background-color: red;
+    background-color: $redLine;
 
     &:hover {
       @extend .shake;
@@ -253,13 +253,11 @@ body {
   }
 
   .orange {
-    // background-color: orange;
     background-color: $footerColor;
-    // color: $footerColor;
   }
 
   .yellow {
-    background-color: #FF00FF;
+    background-color: rgb(231, 76, 255);
 
     &:hover {
       @extend .shake;
@@ -267,7 +265,7 @@ body {
   }
 
   .green {
-    background-color: green;
+    background-color: rgb(0, 161, 0);
 
     &:hover {
       @extend .shake;
@@ -275,7 +273,7 @@ body {
   }
 
   .blue {
-    background-color: blue;
+    background-color: rgb(20, 20, 255);
 
     &:hover {
       @extend .shake;
@@ -289,7 +287,7 @@ body {
 
   @media (min-width: 320px) and (max-width: 640px) {
     width: 100%;
-    margin: -20px auto;
+    margin: 20px auto;
   }
 
   .article {
@@ -298,6 +296,7 @@ body {
     $paddingContent: 40px;
     height: $heightArticle;
     margin-bottom: 88px;
+    // margin-top: 44px;
 
     @media (min-width: 320px) and (max-width: 640px) {
       margin-bottom: 44px;
@@ -744,21 +743,12 @@ body {
 
 }
 
-#hellopreloader {
-  p {
-    display: none;
-  }
-}
-
-#hellopreloader_preload {
-  display: block;
-  position: fixed;
+.preloader{
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
   z-index: 99999;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  // min-width: 1000px;
   background: #e74c3c url(https://profy-shop.top/static/img/tail-spin.svg) center no-repeat;
   background-size: 144px;
 }

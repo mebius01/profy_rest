@@ -13,16 +13,6 @@ import "../img/map.svg"
 import "../img/mail.svg"
 import "../img/smartphone.svg"
 
-// import "../img/close.svg"
-
-// import "../img/1.jpeg"
-// import "../img/2.jpeg"
-// import "../img/3.jpeg"
-// import "../img/4.jpeg"
-// import "../img/5.jpeg"
-// import "../img/6.jpeg"
-
-
 import wow from './plugins/wow'
 import api from './services/Api'
 import getData from './views/categories'
@@ -38,7 +28,7 @@ const formSicial = document.forms.form_social;
 const categories = document.querySelector('.categories')
 const social = document.querySelector('.social')
 
-const hellopreloader = document.getElementById("hellopreloader_preload");
+categories.classList.add("preloader")
 
 window.onload = function () {
 
@@ -47,7 +37,9 @@ window.onload = function () {
     getData(response.data, categories)
     if (response.status === 200) {
       console.log(`Get categories status = ${response.status}`);
-      hellopreloader.style.display = "none";
+      // hellopreloader.style.display = "none";
+      categories.classList.remove("preloader")
+
     }
   })
 }

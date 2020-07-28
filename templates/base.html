@@ -1,7 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="ru">
-
+<script defer async src="{% static 'js/app.js' %}"></script>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,10 +11,7 @@
   <title>Title</title>
   {% endblock title %}
 </head>
-
 <body>
-  {% block preloader %}Preloader{% endblock preloader %}
-
   <header class="header">
     <div class="strip blue"><span class="strict-letter">P</span></div>
     <div class="strip green">
@@ -94,7 +91,7 @@
 {% include "include/_map.html" %}
 {% include "include/_call.html" %}
   <div class="dark-line"></div>
-  <script src="{% static 'js/app.js' %}"></script>
+  {% comment %} <script src="{% static 'js/app.js' %}"></script> {% endcomment %}
 </body>
 
 </html>
