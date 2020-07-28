@@ -11,6 +11,7 @@
   <title>Title</title>
   {% endblock title %}
 </head>
+
 <body>
   <header class="header">
     <div class="strip blue"><span class="strict-letter">P</span></div>
@@ -35,27 +36,26 @@
         <li class="contact__item">
           <img class="contact__icon" src="{% static '/img/smartphone.svg' %}"
             alt="" />
-          <a href="tel:+380963128203" id="footer-telephone"
+          <a href="tel:+123456789" id="footer-telephone"
             class="contact__link">
           </a>
         </li>
         <li class="contact__item">
           <img class="contact__icon" src="{% static '/img/mail.svg' %}"
             alt="" />
-          <a id="footer-email" href="mailto:profy.shop.top@gmail.com"
-            class="contact__link">profy.shop.top@gmail.com
+          <a id="footer-email" href="mailto:email"
+            class="contact__link">email
           </a>
         </li>
         <li class="contact__item">
           <img class="contact__icon" src="{% static '/img/map.svg' %}" alt="" />
           <!-- <a href="" class="contact__link"></a> -->
-          <span id="footer-address" class="contact__text">ул. Космонавтов 124 Б,
-            офис 2</span>
+          <span id="footer-address" class="contact__text">address</span>
         </li>
         <li class="contact__item">
           <img class="contact__icon" src="{% static '/img/clock.svg' %}"
             alt="" />
-          <span id="footer-schedule" class="contact__text">10.00 - 17.00</span>
+          <span id="footer-schedule" class="contact__text">schedule</span>
         </li>
       </ul>
       <form class="form" name="form_footer">
@@ -86,12 +86,13 @@
         <span style="color: #e74c3c;"></span> 8-th Port</a>
     </div>
   </footer>
-{% include "include/_social.html" %}
-{% include "include/_menu.html" %}
-{% include "include/_map.html" %}
-{% include "include/_call.html" %}
+  {% include "include/_social.html" %}
+  {% include "include/_menu.html" %}
+  {% include "include/_map.html" %}
+  {% include "include/_call.html" %}
   <div class="dark-line"></div>
-  {% comment %} <script src="{% static 'js/app.js' %}"></script> {% endcomment %}
+  {% comment %} <script src="{% static 'js/app.js' %}"></script>
+  {% endcomment %}
 </body>
 
 </html>
