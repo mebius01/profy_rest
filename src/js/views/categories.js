@@ -20,11 +20,11 @@ function createArticle(object) {
       <img src="${object.img}" alt="${object.title}" class="img" />
     </div>
     <div class="article__content">
-     <a href="category/${object.slug}" class="article__link">
+     <!-- <a href="category/${object.slug}" class="article__link"> -->
         <h2 class="article__title h2">
           ${object.title}
         </h2>
-      </a>
+      <!-- </a> -->
       <p class="article__text">${object.description}</p>
     </div>
     `)

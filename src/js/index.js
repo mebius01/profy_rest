@@ -6,6 +6,7 @@ import "../img/facebook.svg"
 import "../img/instagram.svg"
 import "../img/google-maps.svg"
 import "../img/telephone.svg"
+import "../img/logo.png"
 
 import "../img/tail-spin.svg"
 import "../img/clock.svg"
@@ -27,7 +28,6 @@ const formFooter = document.forms.form_footer;
 const formSicial = document.forms.form_social;
 const categories = document.querySelector('.categories')
 const social = document.querySelector('.social')
-console.log(social);
 
 
 categories.classList.add("preloader")
@@ -121,5 +121,5 @@ window.addEventListener('scroll', function () {
 });
 
 wow.init();
-console.log("test ok");
+console.log("index ok");
 // })
