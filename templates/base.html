@@ -2,15 +2,13 @@
 <!DOCTYPE html>
 <html lang="ru">
 <script defer async src="{% static 'js/app.js' %}"></script>
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png"
     href="{% static '/img/favicon-32x32.png' %}" />
-  {% block title %}
-  <title>Title</title>
-  {% endblock title %}
+  {% block title %} #### Title #### {% endblock title %}
+  {% block description %} #### Description #### {% endblock description %}
 </head>
 {% block schema %} #### Schema #### {% endblock schema %}
 <body>
@@ -94,7 +92,4 @@
   {% include "include/_call.html" %}
   <div class="dark-line"></div>
 </body>
-
 </html>
-{% comment %} <script src="{% static 'js/app.js' %}"></script>
-{% endcomment %}
