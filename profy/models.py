@@ -17,9 +17,6 @@ class Calls(models.Model):
     def __str__(self):
         return self.name
 
-    def get_absolute_url(self):
-        return reverse("Calls_detail", kwargs={"pk": self.pk})
-
 
 class Categories(models.Model):
     title = models.CharField(max_length=250)
@@ -37,4 +34,4 @@ class Categories(models.Model):
         return self.title
 
     def get_absolute_url(self):
-        return reverse("Categories_detail", kwargs={"slug": self.slug})
+        return '/category/'+self.slug

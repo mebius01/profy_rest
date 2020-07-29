@@ -472,7 +472,9 @@ body {
       &__item {
         width: 100%;
       }
-
+      label {
+        opacity: 0
+      }
       input {
         display: block;
         border: none;
@@ -656,7 +658,9 @@ body {
       margin: 30px auto;
       width: 90%;
     }
-
+    label {
+      opacity: 0
+    }
     input,
     textarea {
       display: block;

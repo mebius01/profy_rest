@@ -1,5 +1,16 @@
 {% extends 'base.html' %}
 {% load static %}
+{% block og %}
+  <meta property="og:type" content="business.business">
+  <meta property="og:title" content="Profy Shop Top">
+  <meta property="og:url" content="https://profy-shop.top">
+  <meta property="og:image" content="https://profy-shop.top/static/img/logo.png">
+  <meta property="business:contact_data:street_address" content="Космонавтов 124Б, офис 2">
+  <meta property="business:contact_data:locality" content="Николаев">
+  <meta property="business:contact_data:region" content="Николаевская">
+  <meta property="business:contact_data:postal_code" content="54000">
+  <meta property="business:contact_data:country_name" content="UA">
+{% endblock og %}
 {% block title %}<title>Profy Shop Top - Красота в Твоих руках!</title>{% endblock title %}
 {% block description %}<meta name="description" content="Profy Shop Top - beauty-room оригинальной косметики для профессионального и домашнего ухода за лицом и телом">{% endblock description %}
 {% block schema %}{% include 'include/_schema.html' %}{% endblock schema %}

@@ -1,95 +1,138 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png"
-    href="{% static '/img/favicon-32x32.png' %}" />
-  {% block title %} #### Title #### {% endblock title %}
-  {% block description %} #### Description #### {% endblock description %}
-</head>
-<body>
-  <script defer async src="{% static 'js/app.js' %}"></script>
-  <header class="header">
-    {% block schema %} #### Schema #### {% endblock schema %}
-    <div class="logo" hidden>
-      <img id="logo_pro" src="{% static 'img/logo.png' %}" alt="Логотип Profy Shop Top">
-    </div>
-    <div class="strip blue"><span class="strict-letter">P</span></div>
-    <div class="strip green">
-      <span class="strict-letter">R</span><span class="soft-letter">S</span>
-    </div>
-    <div class="strip red">
-      <span class="strict-letter">O</span><span class="soft-letter">h</span>
-    </div>
-    <div class="strip orange">
-      <span class="strict-letter">F</span><span class="soft-letter"
-        style="color: white;">o</span>
-    </div>
-    <div class="strip yellow">
-      <span class="strict-letter">Y</span><span class="soft-letter">p</span>
-    </div>
-  </header>
-  {% block content %} #### Reandr Content #### {% endblock content %}
-  <footer class="footer">
-    <div class="row">
-      <ul class="contact">
-        <li class="contact__item">
-          <img class="contact__icon" src="{% static '/img/smartphone.svg' %}"
-            alt="" />
-          <a href="tel:+123456789" id="footer-telephone" class="contact__link">
-          </a>
-        </li>
-        <li class="contact__item">
-          <img class="contact__icon" src="{% static '/img/mail.svg' %}"
-            alt="" />
-          <a id="footer-email" href="mailto:email" class="contact__link">email
-          </a>
-        </li>
-        <li class="contact__item">
-          <img class="contact__icon" src="{% static '/img/map.svg' %}" alt="" />
-          <!-- <a href="" class="contact__link"></a> -->
-          <span id="footer-address" class="contact__text">address</span>
-        </li>
-        <li class="contact__item">
-          <img class="contact__icon" src="{% static '/img/clock.svg' %}"
-            alt="" />
-          <span id="footer-schedule" class="contact__text">schedule</span>
-        </li>
-      </ul>
-      <form class="form" name="form_footer">
-        <div class="form__item">
-          <input type="text" name="call__text" placeholder="Ваше Имя" />
-        </div>
-        <div class="form__item">
-          <input type="tel" name="call__tel" placeholder="+38(050)-123-23-34" />
-        </div>
-        <div class="form__item" hidden>
-          <textarea name="comment" rows="3"
-            placeholder="Комментарий"></textarea>
-        </div>
-        <div class="form__item">
-          <input type="submit" value="Жду Звонка" />
-        </div>
-      </form>
-    </div>
-    <div class="footer__line"></div>
-    <div class="copyright">
-      <p class="copyright__item" style="color: #e74c3c;">
-        Profy Shop <span style="color: white;">© 2020</span>
-      </p>
-      <a style="text-decoration: none; color: #e74c3c;"
-        href="mailto:8th.port@gmail.com" class="copyright__link">
-        <span style="color: #3498db;">created 😜</span>
-        <span style="color: white;">:</span>
-        <span style="color: #e74c3c;"></span> 8-th Port</a>
-    </div>
-  </footer>
-  {% include "include/_social.html" %}
-  {% include "include/_menu.html" %}
-  {% include "include/_map.html" %}
-  {% include "include/_call.html" %}
-  <div class="dark-line"></div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% block og %} #### Open Graph ### {% endblock og %}
+    <link
+      rel="icon"
+      type="image/png"
+      href="{% static '/img/favicon-32x32.png' %}"
+    />
+    {% block title %} #### Title #### {% endblock title %}
+    {% block description %} #### Description #### {% endblock description %}
+    <meta name="robots" content="index, follow">
+  </head>
+  <body>
+    <script defer async src="{% static 'js/app.js' %}"></script>
+    <header class="header">
+      {% block schema %} #### Schema #### {% endblock schema %}
+      <div class="logo" hidden>
+        <img
+          id="logo_pro"
+          src="{% static 'img/logo.png' %}"
+          alt="Логотип Profy Shop Top"
+        />
+      </div>
+      <div class="strip blue"><span class="strict-letter">P</span></div>
+      <div class="strip green">
+        <span class="strict-letter">R</span><span class="soft-letter">S</span>
+      </div>
+      <div class="strip red">
+        <span class="strict-letter">O</span><span class="soft-letter">h</span>
+      </div>
+      <div class="strip orange">
+        <span class="strict-letter">F</span
+        ><span class="soft-letter" style="color: white;">o</span>
+      </div>
+      <div class="strip yellow">
+        <span class="strict-letter">Y</span><span class="soft-letter">p</span>
+      </div>
+    </header>
+    {% block content %} #### Reandr Content #### {% endblock content %}
+    <footer class="footer">
+      <div class="row">
+        <ul class="contact">
+          <li class="contact__item">
+            <img
+              class="contact__icon"
+              src="{% static '/img/smartphone.svg' %}"
+              alt=""
+            />
+            <a
+              href="tel:+123456789"
+              id="footer-telephone"
+              class="contact__link"
+            >
+            </a>
+          </li>
+          <li class="contact__item">
+            <img
+              class="contact__icon"
+              src="{% static '/img/mail.svg' %}"
+              alt=""
+            />
+            <a id="footer-email" href="mailto:email" class="contact__link"
+              >email
+            </a>
+          </li>
+          <li class="contact__item">
+            <img
+              class="contact__icon"
+              src="{% static '/img/map.svg' %}"
+              alt=""
+            />
+            <!-- <a href="" class="contact__link"></a> -->
+            <span id="footer-address" class="contact__text">address</span>
+          </li>
+          <li class="contact__item">
+            <img
+              class="contact__icon"
+              src="{% static '/img/clock.svg' %}"
+              alt=""
+            />
+            <span id="footer-schedule" class="contact__text">schedule</span>
+          </li>
+        </ul>
+        <form class="form" name="form_footer">
+          <div class="form__item">
+            <label for="form_footer-name">Поле для имени</label>
+            <input type="text" name="call__text" id="form_footer-name" placeholder="Ваше Имя" />
+          </div>
+          <div class="form__item">
+            <label for="form_footer-tel">Поле для телефона</label>
+            <input
+              type="tel"
+              name="call__tel"
+              id="form_footer-tel"
+              placeholder="+38(050)-123-23-34"
+            />
+          </div>
+          <div class="form__item" hidden>
+            <label for="form_footer-comment">Поле для Комментария</label>
+            <textarea
+              name="comment"
+              rows="3"
+              id="form_footer-comment"
+              placeholder="Комментарий"
+            ></textarea>
+          </div>
+          <div class="form__item">
+            <input type="submit" value="Жду Звонка" />
+          </div>
+        </form>
+      </div>
+      <div class="footer__line"></div>
+      <div class="copyright">
+        <p class="copyright__item" style="color: #e74c3c;">
+          Profy Shop <span style="color: white;">© 2020</span>
+        </p>
+        <a
+          style="text-decoration: none; color: #e74c3c;"
+          href="mailto:8th.port@gmail.com"
+          class="copyright__link"
+        >
+          <span style="color: #3498db;">created 😜</span>
+          <span style="color: white;">:</span>
+          <span style="color: #e74c3c;"></span> 8-th Port</a
+        >
+      </div>
+    </footer>
+    {% include "include/_social.html" %}
+    {% include "include/_menu.html" %}
+    {% include "include/_map.html" %}
+    {% include "include/_call.html" %}
+    <div class="dark-line"></div>
+  </body>
 </html>

@@ -3,13 +3,31 @@
   <button class="close-icon close"></button>
   <form class="form" name="form_social">
     <div class="form__item">
-      <input type="text" name="call__text" placeholder="Ваше Имя" />
+      <label for="form_social-name">Поле для имени</label>
+      <input
+        type="text"
+        name="call__text"
+        id="form_social-name"
+        placeholder="Ваше Имя"
+      />
     </div>
     <div class="form__item">
-      <input type="tel" name="call__tel" placeholder="+38(050)-123-23-34" />
+      <label for="form_social-tel">Поле для телефона</label>
+      <input
+        type="tel"
+        name="call__tel"
+        id="form_social-tel"
+        placeholder="+38(050)-123-23-34"
+      />
     </div>
     <div class="form__item">
-      <textarea name="comment" rows="3" placeholder="Комментарий"></textarea>
+      <label for="form_social-comment">Поле для Комментария</label>
+      <textarea
+        name="comment"
+        rows="3"
+        id="form_social-comment"
+        placeholder="Комментарий"
+      ></textarea>
     </div>
     <div class="form__item">
       <input type="submit" value="Жду Звонка" />

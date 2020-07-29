@@ -21,10 +21,7 @@ from django.urls import include, path
 from django.views.generic import TemplateView, DetailView
 from profy.views import *
 
-# from django.views.generic import ListView, DetailView
-
 app_name = 'profy'
-
 
 urlpatterns = [
     path('', TemplateView.as_view(template_name='profy/index.html'), name='index'),
