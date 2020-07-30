@@ -1,4 +1,5 @@
-import '../style/index.scss'
+import '../style/index.css'
+import '../style/reset.css'
 
 import "../img/open-menu.svg"
 import "../img/favicon-32x32.png"
@@ -37,7 +38,7 @@ window.onload = function () {
   api.getCategories().then((response) => {
     getData(response.data, categories)
     if (response.status === 200) {
-      console.log(`Get categories status = ${response.status}`);
+      console.info(`Get categories status = ${response.status}`);
       categories.classList.remove("preloader")
     }
   })
@@ -88,7 +89,7 @@ formFooter.addEventListener("submit", getValueOnCall)
 
 function getValueOnCall(e) {
   e.preventDefault();
-  e.stopPropagation();
+  // e.stopPropagation();
   const parent = e.target.parentNode;
   const objectCall = validationForm(e);
   if (objectCall) {
@@ -121,5 +122,5 @@ window.addEventListener('scroll', function () {
 });
 
 wow.init();
-console.log("index ok");
+console.info("index ok");
 // })

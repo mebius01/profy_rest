@@ -4,6 +4,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Rubik:ital,wght@0,400;0,500;0,700;0,900;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}"/>
     {% block og %} #### Open Graph ### {% endblock og %}
     <link
       rel="icon"
@@ -12,7 +14,7 @@
     />
     {% block title %} #### Title #### {% endblock title %}
     {% block description %} #### Description #### {% endblock description %}
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow" />
   </head>
   <body>
     <script defer async src="{% static 'js/app.js' %}"></script>
@@ -88,7 +90,12 @@
         <form class="form" name="form_footer">
           <div class="form__item">
             <label for="form_footer-name">Поле для имени</label>
-            <input type="text" name="call__text" id="form_footer-name" placeholder="Ваше Имя" />
+            <input
+              type="text"
+              name="call__text"
+              id="form_footer-name"
+              placeholder="Ваше Имя"
+            />
           </div>
           <div class="form__item">
             <label for="form_footer-tel">Поле для телефона</label>

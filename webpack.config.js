@@ -21,16 +21,20 @@ module.exports = {
     rules: [
       // css || sass
       {
-        test: /\.s[ac]ss$/i,
-        use: [
-          // Creates `style` nodes from JS strings
-          'style-loader',
-          // Translates CSS into CommonJS
-          'css-loader',
-          // Compiles Sass to CSS
-          'sass-loader',
-        ],
+        test: /\.css$/i,
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
+      // {
+      //   test: /\.s[ac]ss$/i,
+      //   use: [
+      //     // Creates `style` nodes from JS strings
+      //     'style-loader',
+      //     // Translates CSS into CommonJS
+      //     'css-loader',
+      //     // Compiles Sass to CSS
+      //     'sass-loader',
+      //   ],
+      // },
       // fonts
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
@@ -79,5 +83,10 @@ module.exports = {
     ],
   },
 
-  plugins: [new CleanWebpackPlugin()]
+  plugins: [
+    new CleanWebpackPlugin(),
+    new MiniCssExtractPlugin({
+      filename: 'css/main.css',
+    }),
+  ]
 };
