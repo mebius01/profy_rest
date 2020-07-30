@@ -1,5 +1,5 @@
-import '../style/index.css'
 import '../style/reset.css'
+import '../style/index.css'
 
 import "../img/open-menu.svg"
 import "../img/favicon-32x32.png"

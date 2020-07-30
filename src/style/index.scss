@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Rubik:ital,wght@0,400;0,500;0,700;0,900;1,900&display=swap');
 $heightFooter: 250px;
 $heightHeader: 200px;
 $heightFooterHeader: $heightHeader+$heightFooter;
@@ -8,11 +7,8 @@ $textColor: #444444;
 $branColor: #530405;
 $footerColor: #373f48;
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Rubik', sans-serif;
+.rubik-fonts {
+  font-family: "Rubik", sans-serif;
 }
 
 .slideInLeft {
@@ -21,7 +17,6 @@ body {
   animation-fill-mode: both;
 
   @keyframes slideInLeft {
-
     0% {
       transform: translateX(-100%);
       visibility: visible;
@@ -58,7 +53,7 @@ body {
   @-webkit-keyframes zoomIn {
     0% {
       opacity: 0;
-      transform: scale3d(.3, .3, .3);
+      transform: scale3d(0.3, 0.3, 0.3);
     }
 
     50% {
@@ -69,7 +64,7 @@ body {
   @keyframes zoomIn {
     0% {
       opacity: 0;
-      transform: scale3d(.3, .3, .3);
+      transform: scale3d(0.3, 0.3, 0.3);
     }
 
     50% {
@@ -79,7 +74,7 @@ body {
 }
 
 .scale-in-ver-bottom {
-  animation: scale-in-ver-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: scale-in-ver-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 
   @keyframes scale-in-ver-bottom {
     0% {
@@ -94,7 +89,6 @@ body {
       opacity: 1;
     }
   }
-
 }
 
 .pulse {
@@ -207,14 +201,12 @@ body {
     width: 100vh;
     color: white;
 
-
-
     span {
       display: block;
     }
 
     .strict-letter {
-      font-family: 'Rubik', sans-serif;
+      @extend .rubik-fonts;
       font-size: 70px;
       font-weight: 400;
       margin-bottom: 20px;
@@ -222,10 +214,9 @@ body {
     }
 
     .soft-letter {
-      font-family: 'Kaushan Script', cursive;
+      font-family: "Kaushan Script", cursive;
       font-size: 60px;
       color: $footerColor;
-
     }
 
     @media (min-width: 320px) and (max-width: 640px) {
@@ -279,7 +270,7 @@ body {
 }
 
 .categories {
-  font-family: 'Rubik', sans-serif;
+  @extend .rubik-fonts;
   width: 80%;
   margin: 40px auto;
 
@@ -314,7 +305,7 @@ body {
       background-color: rgba(255, 255, 255, 0.5);
       color: $footerColor;
       position: relative;
-      top: -$heightArticle/2 - $paddingContent*2 - $paddingContent; //!!!!!!!!!
+      top: -$heightArticle/2 - $paddingContent * 2 - $paddingContent; //!!!!!!!!!
       height: 160px;
       width: 50%;
       padding: 40px 10px;
@@ -350,7 +341,6 @@ body {
         }
       }
 
-
       &:hover {
         background-color: white;
         top: -222 - 80 - 143px;
@@ -379,7 +369,6 @@ body {
       line-height: 20px;
     }
 
-
     &__link {
       text-decoration: none;
       display: block;
@@ -392,7 +381,7 @@ body {
 }
 
 .about {
-  font-family: 'Rubik', sans-serif;
+  @extend .rubik-fonts;
   @extend .categories;
   @extend .shadow;
   background-color: white;
@@ -416,7 +405,7 @@ body {
 
 .footer {
   background-color: $footerColor;
-  font-family: 'Rubik', sans-serif;
+  @extend .rubik-fonts;
 
   &__line {
     height: 1px;
@@ -447,7 +436,7 @@ body {
 
         &:focus,
         &:hover {
-          @extend .focus
+          @extend .focus;
         }
       }
 
@@ -472,10 +461,12 @@ body {
       &__item {
         width: 100%;
       }
+
       label {
         // opacity: 0
         display: none;
       }
+
       input {
         display: block;
         border: none;
@@ -493,7 +484,6 @@ body {
           @extend .pulse;
         }
       }
-
     }
   }
 
@@ -542,7 +532,6 @@ body {
           //   @extend .pulse;
           // }
         }
-
       }
     }
 
@@ -605,7 +594,6 @@ body {
       height: 32px;
     }
   }
-
 }
 
 .map {
@@ -659,10 +647,12 @@ body {
       margin: 30px auto;
       width: 90%;
     }
+
     label {
       // opacity: 0
       display: none;
     }
+
     input,
     textarea {
       display: block;
@@ -683,7 +673,6 @@ body {
         @extend .pulse;
       }
     }
-
   }
 
   @media (min-width: 320px) and (max-width: 640px) {
@@ -711,7 +700,6 @@ body {
     font-size: 26px;
     padding: 20px;
 
-
     &:hover {
       @extend .pulse;
     }
@@ -720,7 +708,6 @@ body {
       @extend .focus;
     }
   }
-
 }
 
 .thank {
@@ -746,10 +733,9 @@ body {
   top: 0;
   right: 20%;
   z-index: -1;
-
 }
 
-.preloader{
+.preloader {
   height: 100vh;
   width: 100vw;
   margin: 0;

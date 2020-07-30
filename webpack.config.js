@@ -1,8 +1,10 @@
 const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const {
   CleanWebpackPlugin
 } = require('clean-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
 module.exports = {
   entry: {
     index: './src/js/index.js',
@@ -85,6 +87,7 @@ module.exports = {
 
   plugins: [
     new CleanWebpackPlugin(),
+    new OptimizeCSSAssetsPlugin({}),
     new MiniCssExtractPlugin({
       filename: 'css/main.css',
     }),

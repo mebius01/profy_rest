@@ -1,9 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Rubik:ital,wght@0,400;0,500;0,700;0,900;1,900&display=swap");
-html,
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Rubik', sans-serif;
+.rubik-fonts, .header .strip .strict-letter, .categories, .about, .footer {
+  font-family: "Rubik", sans-serif;
 }
 
 .slideInLeft {
@@ -329,7 +325,6 @@ body {
 }
 
 .header .strip .strict-letter {
-  font-family: 'Rubik', sans-serif;
   font-size: 70px;
   font-weight: 400;
   margin-bottom: 20px;
@@ -337,7 +332,7 @@ body {
 }
 
 .header .strip .soft-letter {
-  font-family: 'Kaushan Script', cursive;
+  font-family: "Kaushan Script", cursive;
   font-size: 60px;
   color: #373f48;
 }
@@ -375,7 +370,6 @@ body {
 }
 
 .categories, .about {
-  font-family: 'Rubik', sans-serif;
   width: 80%;
   margin: 40px auto;
 }
@@ -495,7 +489,6 @@ body {
 }
 
 .about {
-  font-family: 'Rubik', sans-serif;
   background-color: white;
   color: #373f48;
   padding: 40px;
@@ -519,7 +512,6 @@ body {
 
 .footer {
   background-color: #373f48;
-  font-family: 'Rubik', sans-serif;
 }
 
 .footer__line {
