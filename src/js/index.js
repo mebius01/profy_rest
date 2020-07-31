@@ -9,6 +9,13 @@ import "../img/google-maps.svg"
 import "../img/telephone.svg"
 import "../img/logo.png"
 
+import "../img/0.jpeg"
+import "../img/1.jpeg"
+import "../img/2.jpeg"
+import "../img/3.jpeg"
+import "../img/4.jpeg"
+import "../img/5.jpeg"
+
 import "../img/tail-spin.svg"
 import "../img/clock.svg"
 import "../img/map.svg"

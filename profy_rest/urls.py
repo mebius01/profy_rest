@@ -27,5 +27,6 @@ urlpatterns = [
     path('', include('profy.urls')),
     path('admin/', admin.site.urls),
     path('robots.txt', TemplateView.as_view(template_name = 'robots.txt', content_type = 'text/plain')),
+    path('googlea31b0c0e5cc4a0b1.html', TemplateView.as_view(template_name = 'googlea31b0c0e5cc4a0b1.html'), name = 'googlea31b0c0e5cc4a0b1'),
     # path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap')
 ]
