@@ -11,10 +11,9 @@ from django.conf import settings
 
 def send_email(name, telephone, comment):
     subject = 'Заказ звонка от {} .'.format(
-        name) + 'С номера {}'.format(telephone)
+        name) + ' С номера {}'.format(telephone)
     message = comment
-    send_mail(subject, message, 'your_account@yhoo.com',
-              [settings.DEFAULT_FROM_EMAIL], fail_silently=False)
+    send_mail(subject, message, 'profy.shop.top@gmail.com', [settings.DEFAULT_FROM_EMAIL], fail_silently=False)
 
 
 class CategoriesList(ListAPIView):
@@ -22,13 +21,14 @@ class CategoriesList(ListAPIView):
     serializer_class = CategoriesSerializer
 
 
-class CategoriesDetail(RetrieveAPIView):
-    queryset = Categories.objects.all()
-    serializer_class = CategoriesSerializer
-    lookup_field = 'slug'
+# class CategoriesDetail(RetrieveAPIView):
+#     queryset = Categories.objects.all()
+#     serializer_class = CategoriesSerializer
+#     lookup_field = 'slug'
 
 
 class CallsCreate(CreateAPIView):
+    queryset = Calls.objects.all()
     serializer_class = CallsSerializer
 
     def post(self, request, *args, **kwargs):
